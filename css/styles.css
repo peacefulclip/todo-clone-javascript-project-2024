@@ -1,0 +1,28 @@
+@import "reset.css";
+
+@import "components/mainscreenleft.css";
+@import "components/mainscreencenter.css";
+@import "components/character.css";
+@import "components/login.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+@font-face {
+    font-family: "bartex"; 
+    src: url("./font/bartex.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.hidden {
+    display: none !important;
+}
+
+body {
+    font-family: "bartex";
+    font-weight: 400;
+    font-style: normal;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}

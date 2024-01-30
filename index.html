@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="css/styles.css?after" type="text/css" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🎀Welcome to Barbie World🎀</title>
+  </head>
+  <body>
+    <!--background-->
+
+    <!--INITIATE SCREEN-->
+    <!--character-->
+    <div id="initiate-screen">
+      <div id="character-screen">
+        <div id="character-image" class="hidden">
+          <img id="character-image-background" src="" />
+          <div id="character" class="hidden">
+            <div class="barbiecursor bg">Hi Barbie!</div>
+            <div class="kencursor bg">Oh! Are you just Ken?</div>
+          </div>
+        </div>
+      </div>
+      <!--login-->
+      <form id="barbie-login-form" class="hidden">
+        <input
+          required
+          maxlength="15"
+          type="text"
+          placeholder="What Is Your Barbie Name?"
+        />
+        <button>Barbie Land This Way 🛼</button>
+      </form>
+    </div>
+
+    <div id="main-screen" class="hidden">
+      <!--MAIN SCREEN LEFT -->
+      <div id="main-screen-left" class="main-screen-column hidden">
+        <img id="profile-booth" src="images/profile-booth.png" />
+        <!--quote-->
+        <div id="quote-container">
+          <div id="quote"><span id="line"></span><span id="cast"></span></div>
+          <button id="quote-refresh">Want Another Inspiration?</button>
+        </div>
+        <!--profile-->
+        <select name="profileType" id="profile-option">
+          <option value="" hidden selected>Choose Your Mood</option>
+          <option value="1">Stereotypical Barbie</option>
+          <option value="2">Just Ken</option>
+        </select>
+        <img id="profile-choice" />
+      </div>
+
+      <!--MAIN SCREEN CENTER-->
+      <div id="main-screen-center" class="main-screen-column hidden">
+        <!--greeting-->
+        <div id="barbie-greeting"></div>
+        <!--barbie todo-->
+        <form id="barbieToDoForm">
+          <input required placeholder="What To Do in Barbie Land" type="text" />
+        </form>
+        <ul id="barbieToDoList"></ul>
+      </div>
+
+      <!--MAIN SCREEN RIGHT-->
+      <div id="main-screen-right" class="main-screen-column hidden">
+        <!--clock-->
+        <div id="clock">
+          <h1 id="clock-time">00:00:00</h1>
+          <h2 id="clock-period"></h2>
+        </div>
+
+        <!--audio-->
+
+        <!--weather-->
+        <div id="weather">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <!--script-->
+    <!--<script src="js/background.js"></script> 배경화면 결정필요-->
+    <script src="js/greeting.js"></script>
+    <script src="js/barbietodo.js"></script>
+
+    <script src="js/quote.js"></script>
+    <script src="js/profile.js"></script>
+
+    <script src="js/clock.js"></script>
+    <script src="js/audio.js"></script>
+    <script src="js/weather.js"></script>
+  </body>
+</html>

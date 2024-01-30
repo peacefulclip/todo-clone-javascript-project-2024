@@ -1,0 +1,73 @@
+#character {
+    font-size: 80px;
+    color: white;
+}
+
+#character-screen, #character {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+@keyframes cursorShadow {
+    0% {
+        transform: translateY(0);
+        transform-origin: 50% 50%;
+        text-shadow: none;
+    }
+    
+    100% {
+        transform: translateY(-3px);
+        transform-origin: 50% 50%;
+        text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc, 0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc, 0 8px 0 #ccc, 0 9px 0 #ccc, 0 50px 30px rgba(0,0,0,.3);
+    }
+}
+
+.barbiecursor {
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='50' height='60' viewport='0 0 100 100' style='fill:black;font-size:30px;'><text y='50%'>🦄</text></svg>") 16 0,auto; /*!emojicursor.app*/
+}
+
+.kencursor {
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='50' height='60' viewport='0 0 100 100' style='fill:black;font-size:30px;'><text y='50%'>🐴</text></svg>") 16 0,auto; /*!emojicursor.app*/
+}
+
+.barbiecursor, .kencursor {
+    display: block;
+    z-index: 905;
+    transform: translate3d(0,0,0);
+    margin: 5px 0px;
+    padding: 10px;
+}
+
+
+.barbiecursor:hover, .kencursor:hover {
+    animation: 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s 1 normal both running cursorShadow;
+}
+
+#character-screen {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(180deg, #EAB8C5,#71A9FA,#F06AAA);
+    background-size: 100% 600%;
+    display: block;
+    z-index: 905;
+    transform: translate3d(0,0,0);
+    animation: bgColor 8s linear 0s 1 normal both running;
+}
+
+@keyframes bgColor {
+    0% {
+        background-position: 50% 100%;
+    }
+    
+    100% {
+        background-position: 50% 0%;
+    }
+}

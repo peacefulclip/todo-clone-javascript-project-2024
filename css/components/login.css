@@ -1,0 +1,20 @@
+#barbie-login-form {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(180deg, #EAB8C5,#71A9FA,#F06AAA);
+    background-size: 100% 600%;
+    display: block;
+    z-index: 905;
+    transform: translate3d(0,0,0);
+    animation: bgColor 8s linear 0s 1 normal both running;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 80px;
+    color: white;
+}
