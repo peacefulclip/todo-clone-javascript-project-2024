@@ -1,0 +1,20 @@
+#resize-monitor {
+    position: absolute;
+    z-index: 1000;
+    height: 100vh;
+    background: linear-gradient(#0133FF, #02CDFF);
+    color: #FAE6F1;
+    display: flex;
+    top: 0;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-family: "poppins";
+}
+
+@media screen and (min-width: 1700px) {
+    #resize-monitor {
+        display: none;
+    }
+}
