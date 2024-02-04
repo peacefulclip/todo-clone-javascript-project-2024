@@ -10,6 +10,9 @@
     box-sizing: border-box;
     zoom: 0.9;
     margin-top: 30px;
+    position: absolute;
+    bottom: 50px;
+    left: 65px;
 
 }
 
