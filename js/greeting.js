@@ -16,7 +16,9 @@ const initiateScreen = document.querySelector("#initiate-screen");
 const mainScreen = document.querySelector("#main-screen");
 const mainScreenLeft = document.querySelector("#main-screen-left");
 const mainScreenCenter = document.querySelector("#main-screen-center");
-const mainScreenRight = document.querySelector("#main-screen-right");
+
+const splashScreen = document.querySelector("#splash")
+
 
 // initiate screen - are you Barbie or Ken?
 characterKen.addEventListener("click", function() {
@@ -41,12 +43,12 @@ if (barbieSavedUsername === null) {
 };
 
 function paintBarbieGreeting(barbieUsername){
-    barbieGreeting.innerText = `Hi Barbie ${barbieUsername}`;
+    barbieGreeting.innerText = `Hi Barbie ${barbieUsername}!`;
     barbieGreeting.classList.remove(HIDDEN_KEY);
+    splashScreen.classList.remove(HIDDEN_KEY);
     mainScreen.classList.remove(HIDDEN_KEY);
     mainScreenLeft.classList.remove(HIDDEN_KEY);
     mainScreenCenter.classList.remove(HIDDEN_KEY);
-    mainScreenRight.classList.remove(HIDDEN_KEY);
 };
 
 function submitBarbieLogin(event) {
@@ -55,5 +57,4 @@ function submitBarbieLogin(event) {
     const barbieUsername = barbieLoginFormInput.value;
     localStorage.setItem(BARBIEUSERNAME_KEY, barbieUsername);
     paintBarbieGreeting(barbieUsername);
-
 };

@@ -12,73 +12,139 @@
     <!--INITIATE SCREEN-->
     <!--character-->
     <div id="initiate-screen">
+      <audio src="music/dance-the-night.mp3" type="audio/mp3" autoplay></audio>
+      <div class="cloud_four"></div>
+      <div class="cloud"></div>
+      <div class="cloud_two"></div>
+      <div class="cloud_three"></div>
       <div id="character-screen">
         <div id="character-image" class="hidden">
-          <img id="character-image-background" src="" />
           <div id="character" class="hidden">
             <div class="barbiecursor bg">Hi Barbie!</div>
-            <div class="kencursor bg">Oh! Are you just Ken?</div>
+            <div class="kencursor bg">Oh! Or are you just Ken?</div>
           </div>
         </div>
       </div>
       <!--login-->
+
       <form id="barbie-login-form" class="hidden">
         <input
           required
           maxlength="15"
           type="text"
-          placeholder="What Is Your Barbie Name?"
+          placeholder="Write Your `Barbie` Nickname!"
         />
-        <button>Barbie Land This Way 🛼</button>
+        <div>
+          <button class="btn-16">Barbie Land This Way</button>
+          <button class="focus-in-expand">➡️</button>
+        </div>
       </form>
     </div>
 
     <div id="main-screen" class="hidden">
       <!--MAIN SCREEN LEFT -->
       <div id="main-screen-left" class="main-screen-column hidden">
-        <img id="profile-booth" src="images/profile-booth.png" />
-        <!--quote-->
-        <div id="quote-container">
-          <div id="quote"><span id="line"></span><span id="cast"></span></div>
-          <button id="quote-refresh">Want Another Inspiration?</button>
-        </div>
+        <!--clock-->
+        <div id="main-screen-left-upper"></div>
+        <!--삭제-->
+        <img id="profile-booth" src="" />
+
         <!--profile-->
-        <select name="profileType" id="profile-option">
-          <option value="" hidden selected>Choose Your Mood</option>
-          <option value="1">Stereotypical Barbie</option>
-          <option value="2">Just Ken</option>
-        </select>
-        <img id="profile-choice" />
+        <div id="profile">
+          <div>🦄 Today I Feel 🦄</div>
+          <select name="profileType" id="profile-option">
+            <option value="" hidden selected>Choose Your Mood</option>
+            <option value="1">Stereotypical Barbie</option>
+            <option value="2">Just Ken</option>
+            <option value="3">Human</option>
+            <option value="4">Weird Barbie</option>
+            <option value="5">President Barbie</option>
+            <option value="6">Lawyer Barbie</option>
+            <option value="7">Doctor Barbie</option>
+            <option value="8">Diplomat Barbie</option>
+            <option value="9">Pyhsicist Barbie</option>
+            <option value="10">Mermaid Barbie</option>
+            <option value="11">Midge</option>
+            <option value="12">Another Ken</option>
+            <option value="13">Maybe Ken?</option>
+            <option value="14">Only One Allan</option>
+            <option value="15">Real World Man</option>
+          </select>
+          <!--<i id="icon-container" class="fa-solid fa-heart"></i>-->
+          <img id="profile-choice" />
+        </div>
+        <div class="music-body">
+          <div class="music-container">
+            <div class="music-info">
+              <h4 id="title">Pink</h4>
+              <div class="progress-container"><div class="progress"></div></div>
+            </div>
+            <audio src="music/Pink.mp3" id="audio"></audio>
+            <div class="img-container">
+              <img src="images/Pink.jpg" alt="music-cover" id="cover" />
+            </div>
+            <div class="navigation">
+              <button id="prev" class="action-btn">
+                <i class="fas fa-backward"></i>
+              </button>
+              <button id="play" class="action-btn action-btn-big">
+                <i class="fas fa-play"></i>
+              </button>
+              <button id="next" class="action-btn">
+                <i class="fas fa-forward"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div id="main-screen-left-below">
+          <div id="clock">
+            <h1 id="clock-time">00:00:00</h1>
+            <h2 id="clock-period"></h2>
+          </div>
+
+          <!--weather-->
+          <div id="weather">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
       </div>
 
       <!--MAIN SCREEN CENTER-->
       <div id="main-screen-center" class="main-screen-column hidden">
-        <!--greeting-->
-        <div id="barbie-greeting"></div>
-        <!--barbie todo-->
-        <form id="barbieToDoForm">
-          <input required placeholder="What To Do in Barbie Land" type="text" />
-        </form>
-        <ul id="barbieToDoList"></ul>
-      </div>
-
-      <!--MAIN SCREEN RIGHT-->
-      <div id="main-screen-right" class="main-screen-column hidden">
-        <!--clock-->
-        <div id="clock">
-          <h1 id="clock-time">00:00:00</h1>
-          <h2 id="clock-period"></h2>
+        <div>
+          <!--greeting-->
+          <div id="barbie-greeting"></div>
+          <!--barbie todo-->
+          <form id="barbieToDoForm">
+            <input
+              required
+              placeholder="✏️ Don't Forget to Do This in Barbie Land..."
+              type="text"
+            />
+          </form>
+          <ul id="barbieToDoList"></ul>
         </div>
-
-        <!--audio-->
-
-        <!--weather-->
-        <div id="weather">
-          <span></span>
-          <span></span>
+        <!--quote-->
+        <div id="quote-container">
+          <button id="quote-refresh">🔄</button>
+          <div id="quote"><span id="line"></span><span id="cast"></span></div>
+        </div>
+        <div id="boarding-ticket">
+          One Way Tickt to Barbie Land
+          <i class="fa-sharp fa-solid fa-plane fa-xs"></i>
+          <i class="fa-sharp fa-solid fa-plane fa-xs"></i>
         </div>
       </div>
     </div>
+
+    <div id="splash" class="hidden">
+      <img src="splash.webp" />
+    </div>
+
+    <div id="resize-monitor"><span>Please resize your monitor! 🪞</span></div>
+
     <!--script-->
     <!--<script src="js/background.js"></script> 배경화면 결정필요-->
     <script src="js/greeting.js"></script>
@@ -88,7 +154,12 @@
     <script src="js/profile.js"></script>
 
     <script src="js/clock.js"></script>
-    <script src="js/audio.js"></script>
+    <script src="js/player.js"></script>
     <script src="js/weather.js"></script>
+
+    <script
+      src="https://kit.fontawesome.com/00bff72823.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

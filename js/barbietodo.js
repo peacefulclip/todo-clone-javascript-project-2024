@@ -48,12 +48,13 @@ function paintBarbieToDo(barbieNewToDo){
     const li = document.createElement("li");
     li.id = barbieNewToDo.id;
     const span = document.createElement("span");
-    span.innerText = barbieNewToDo.text;
+    span.innerText = `🎀   ${barbieNewToDo.text}`;
     const button = document.createElement("button");
     button.addEventListener("click", deleteBarbieToDo);
-    button.innerText = "X"
+    button.innerText = "🗑️"
     li.appendChild(span);
     li.appendChild(button);
+    li.classList.add("bounce-top");
     barbieToDoList.appendChild(li);
 };
 

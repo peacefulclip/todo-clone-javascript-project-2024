@@ -5,16 +5,84 @@
     overflow: hidden;
     top: 0;
     left: 0;
-    background-image: linear-gradient(180deg, #EAB8C5,#71A9FA,#F06AAA);
+    /*background-image: linear-gradient(180deg, #296ac5, #ce496c,#eb9ec3);*/
     background-size: 100% 600%;
     display: block;
     z-index: 905;
     transform: translate3d(0,0,0);
-    animation: bgColor 8s linear 0s 1 normal both running;
+    /*animation: bgColor 10s linear infinite alternate both;*/
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-size: 80px;
-    color: white;
 }
+
+
+
+
+#barbie-login-form input, button {
+    font-family: "bartex";
+}
+
+#barbie-login-form input {
+    justify-content: center;
+    align-items: center;
+    width: 850px;
+    height: 100px;
+    font-size: 70px;
+    border: 0;
+    border-bottom: transparent 5px solid;
+    background-color: transparent;
+    text-align: center;
+    outline: none;
+    transition: ease-out 0.3s;
+}
+
+#barbie-login-form input::placeholder,
+#barbie-login-form input {
+    color: #FAE6F1;
+}
+
+#barbie-login-form input:focus {
+    border-bottom: 5px solid #F0FFFF;
+}
+
+#barbie-login-form button {
+    background-color: transparent;
+    color: #FAE6F1;
+    outline: none;
+    border: none;
+    font-size: 50px;
+    margin-top: 10px;
+}
+
+#barbie-login-form div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#barbie-login-form button:last-child {
+    zoom: 1.5;
+    margin-left: 5px;
+}
+
+#barbie-login-form button:hover {
+}
+
+.focus-in-expand {
+	animation: focus-in-expand 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes focus-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  

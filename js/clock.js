@@ -18,7 +18,7 @@ function get24Clock(){
     } else {
         clockPeriod.innerText = "AM";
     };
-    clockTime.innerText = `${hour}:${minute}:${second}`;
+    clockTime.innerText = `⏰ ${hour}:${minute}:${second}`;
 };
 
 get24Clock();
