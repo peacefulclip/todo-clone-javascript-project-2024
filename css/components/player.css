@@ -9,8 +9,10 @@
     flex-direction: column;
     box-sizing: border-box;
     zoom: 0.9;
-    margin-top: 30px;
-
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .img-container img {
