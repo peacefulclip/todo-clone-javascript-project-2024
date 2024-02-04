@@ -10,7 +10,7 @@ const cover = document.querySelector("#cover");
 
 // song titles
 
-const songs = ['Barbie World', 'Dance The Night', 'Speed Drive', 'Barbie Dreams', 'What Was I Made For', 'Pink']
+const songs = ['Barbie World', 'Dance the Night', 'Speed Drive', 'Barbie Dreams', 'What Was I Made For', 'Pink']
 
 // keep track of song
 let songIndex = 5;
