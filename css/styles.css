@@ -7,22 +7,21 @@
 @import "components/player.css";
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
 
 @font-face {
     font-family: "bartex"; 
-    src: url("./font/bartex.ttf") format("truetype");
+    src: local("bartex"), url("font/bartex.ttf") format("truetype"), url("font/bartex.woff") format("woff"), url("font/bartex.otf") format("opentype");
     font-weight: normal;
     font-style: normal;
 }
-
-
 
 .hidden {
     display: none !important;
 }
 
 body {
-    font-family: "bartex";
+    font-family: "bartex", "Berkshire Swash" !important;
     font-weight: 400;
     font-style: normal;
     overflow: hidden;

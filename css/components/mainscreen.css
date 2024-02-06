@@ -1,6 +1,6 @@
 /*MAIN SCREEN DISTRIBUTION*/
 #main-screen {
-    font-family: "bartex";
+    font-family: "bartex", "Berkshire Swash";
     display: flex;
     justify-content: center;
     position: absolute;
@@ -107,7 +107,7 @@
     border: 1px solid transparent;
     box-shadow: 1px grey; 
     appearance: none; 
-    font-family: "bartex";
+    font-family: "bartex", "Berkshire Swash";
     font-size: 30px;
     outline: none;
     animation: jello-horizontal 2s both;
@@ -174,7 +174,7 @@ select::-ms-expand{
 }
 
 #barbieToDoForm input {
-    font-family: "bartex";
+    font-family: "bartex", "Berkshire Swash";
     font-weight: bolder;
     margin-top: 30px;
     border: none;
